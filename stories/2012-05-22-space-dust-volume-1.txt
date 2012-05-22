@@ -5,16 +5,16 @@ date: 2012-05-21 4:10
 
 I've written a few smart packages to support my Meteor apps. The motherload of them are available [on my Github page](https://github.com/possibilities).
 
-## The sweeter tidbits
+### The sweeter tidbits
 
-### [user-sessions](https://github.com/possibilities/meteor-user-sessions)
+#### [user-sessions](https://github.com/possibilities/meteor-user-sessions)
 
 *A smart package for authentication and tracking users across requests*
 
 Meteor currently ships with no way to track users across requests and gives no love when it comes to authentication and such... it'll be interesting to see what happens on this front. In the meantime I worked out a pretty fun "drop in" solution to the problem(s) at hand. Setup is basically adding a partial to your app's layout (assuming you want the UI) and a couple lines of code if you want to declare some, or all, of your `Meteor.methods` accessible only by logged in users. And of course it exposes everything you need to write custom authorization code in your `Meteor.methods`. Check out [the demo](http://user-sessions.meteor.com).
 
 
-### [ui-helpers](https://github.com/possibilities/meteor-ui-helpers)
+#### [ui-helpers](https://github.com/possibilities/meteor-ui-helpers)
 
 *A bootstrap based UI framework for making Meteor UIs more awesome*
 
@@ -28,22 +28,22 @@ A "drop-in" solution for making apps interactive without having to write a bunch
 
 There's some cool stuff in there but the code need lots of love and some documentation when things get more stable.
 
-### [filters](https://github.com/possibilities/meteor-filters)
+#### [filters](https://github.com/possibilities/meteor-filters)
 
 *Middleware filters for Meteor.methods and friends*
 
 A tool for package developers for adding filter methods to `Meteor.methods`. Much of the magic behind [user-sessions](https://github.com/possibilities/user-sessions) comes from this package. See the github page for examples if you're wondering why this would be useful.
 
-## Other tricks
+### Other tricks
 
-### [template-override](https://github.com/possibilities/meteor-template-override)
+#### [template-override](https://github.com/possibilities/meteor-template-override)
 
 *Allow apps to override a smart package's template partials without losing the original partials event bindings*
 
-### [simple-secure](https://github.com/possibilities/meteor-simple-secure)
+#### [simple-secure](https://github.com/possibilities/meteor-simple-secure)
 
 *A simple smart package for turning off Meteor's automatically generated Mongo accessors*
 
-### [model-extensions](https://github.com/possibilities/meteor-model-extensions)
+#### [model-extensions](https://github.com/possibilities/meteor-model-extensions)
 
 *A dead simple way to add behavior to objects retrieved from Mongo by Meteor*
