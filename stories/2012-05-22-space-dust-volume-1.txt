@@ -7,7 +7,7 @@ I've written a few smart packages to support my Meteor apps. The motherload of t
 
 ## The sweeter tidbits
 
-### [user-sessions](https://github.com/possibilities/user-sessions)
+### [user-sessions](https://github.com/possibilities/meteor-user-sessions)
 
 *A smart package for authentication and tracking users across requests*
 
@@ -26,9 +26,9 @@ A "drop-in" solution for making apps interactive without having to write a bunch
 
   * Other nasty details dissapear
 
-There's some cool stuff but the code need lots of love and some documentation when things get more stable
+There's some cool stuff in there but the code need lots of love and some documentation when things get more stable.
 
-### [filter](https://github.com/possibilities/meteor-filters)
+### [filters](https://github.com/possibilities/meteor-filters)
 
 *Middleware filters for Meteor.methods and friends*
 
