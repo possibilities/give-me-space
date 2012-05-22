@@ -1,6 +1,6 @@
 ---
 title: "Space Dust: Volume 1"
-date: 2012-05-20 7:50
+date: 2012-05-21 4:10
 ---
 
 I've written a few smart packages to support my Meteor apps. The motherload of them are available [on my Github page](https://github.com/possibilities).
