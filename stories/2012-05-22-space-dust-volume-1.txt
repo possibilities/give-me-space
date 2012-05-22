@@ -1,0 +1,51 @@
+---
+title: "Space Dust: Volume 1"
+date: 2012-05-20 7:50
+---
+
+# Space Dust
+
+I've written a few smart packages to support my Meteor apps. The motherload of them are available [on my Github page](https://github.com/possibilities).
+
+## The sweeter tidbits
+
+### [user-sessions](https://github.com/possibilities/user-sessions)
+
+*A smart package for authentication and tracking users across requests*
+
+Meteor currently ships with no way to track users across requests and gives no love when it comes to authentication and such... it'll be interesting to see what happens on this front. In the meantime I worked out a pretty fun "drop in" solution to the problem(s) at hand. Setup is basically adding a partial to your app's layout (assuming you want the UI) and a couple lines of code if you want to declare some, or all, of your `Meteor.methods` accessible only by logged in users. And of course it exposes everything you need to write custom authorization code in your `Meteor.methods`. Check out [the demo](http://user-sessions.meteor.com).
+
+
+### [ui-helpers](https://github.com/possibilities/meteor-ui-helpers)
+
+*A bootstrap based UI framework for making Meteor UIs more awesome*
+
+A "drop-in" solution for making apps interactive without having to write a bunch of code. It's used by [user-sessions](https://github.com/possibilities/user-sessions), which is added to this blog so you can get a peek at some of it by clicking on the Sign up/Sign in buttons. Most of the existing features revolve around displaying forms (in modal a dialog) and having the form talk to the server without writing the glue code. The basic premise from the development perspective is that by adding a couple data attributes to your form you get things like:
+
+  * The modal dialog knows to go away when the form is successful and stick around when if the form isn't valid. Success messages, error messages, etc
+  
+  * Optional live editing of fields so the form is saved as you change values without having to submit a form
+
+  * Other nasty details dissapear
+
+There's some cool stuff but the code need lots of love and some documentation when things get more stable
+
+### [filter](https://github.com/possibilities/meteor-filters)
+
+*Middleware filters for Meteor.methods and friends*
+
+A tool for package developers for adding filter methods to `Meteor.methods`. Much of the magic behind [user-sessions](https://github.com/possibilities/user-sessions) comes from this package. See the github page for examples if you're wondering why this would be useful.
+
+## Other tricks
+
+### [template-override](https://github.com/possibilities/meteor-template-override)
+
+*Allow apps to override a smart package's template partials without losing the original partials event bindings*
+
+### [simple-secure](https://github.com/possibilities/meteor-simple-secure)
+
+*A simple smart package for turning off Meteor's automatically generated Mongo accessors*
+
+### [model-extensions](https://github.com/possibilities/meteor-model-extensions)
+
+*A dead simple way to add behavior to objects retrieved from Mongo by Meteor*
