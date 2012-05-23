@@ -22,9 +22,9 @@ A "drop-in" solution for making apps interactive without having to write a bunch
 
   * The modal dialog knows to go away when the form is successful and stick around when if the form isn't valid. Success messages, error messages, etc
   
-  * Optional live editing of fields so the form is saved as you change values without having to submit a form
+  * Optional live editing of fields so the form is saved as you change values without having to submit it
 
-  * Other nasty details dissapear
+  * Other nasty details disappear
 
 There's some cool stuff in there but the code need lots of love and some documentation when things get more stable.
 
